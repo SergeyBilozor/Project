@@ -25,15 +25,15 @@ int main()
 			cout << "A[" << i << "] = " << A[i] << endl;
 		}
 	}
-	int min = A[0];
+	int max = A[0];
 	for (int i = 0; i < 10; i++)
 	{
-		if (A[i] < min)
+		if (A[i] > max)
 		{
-			min = A[i];
+			max = A[i];
 		}
 	}
-	cout << "Min element = " << min << endl;
+	cout << "Max element = " << max << endl;
 	system("pause");
 	return 0;
 }
